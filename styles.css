@@ -1,0 +1,182 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+.container{
+    width: 100%;
+    min-height: 100vh;
+    background-image: url(grad.webp);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    padding: 10%;
+}
+.to-do-app{
+    width: 100%;
+    max-width: 540px;
+    background: white;
+    margin: 20px auto 20px;
+    padding: 40px 30px 70px;
+    border-radius: 10 px;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+    border-color: red;
+    border-style: solid;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    
+    
+}
+.to-do-app h2{
+    color: #002765;
+    display: flex;
+    flex-direction: horizontal;
+    justify-content: center;
+    align-items: center;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 20px;    
+    font-family: Georgia, 'Times New Roman', Times, serif;
+
+}
+.to-do-app h2 img{
+    width: 30px;
+    margin-left: 10px;
+}
+.row{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #edeef0;
+    border-radius:  30px;
+    -webkit-border-radius:  30px;
+    -moz-border-radius:  30px;
+    -ms-border-radius:  30px;
+    -o-border-radius:  30px;
+    padding-left: 20px;
+    margin-bottom: 25px;
+    height: 70px;
+    width: 100%;
+}
+
+input{
+    flex: 1;
+    border: none ;
+    outline: none;
+    background: transparent;
+    padding: 5%;
+    font-weight: 14px;
+}
+input::placeholder{
+    color: #002765;
+    font-weight: 500;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+button{
+   border: none;
+   outline: none;
+   padding: 16px 32px;
+   height: 70px;
+   width: 25%;
+   background: #ff5945;
+   color: #fff;
+   font-size: 16px;
+   font-family: Georgia, 'Times New Roman', Times, serif;
+   font-weight: 50;
+   cursor: pointer;
+   border-radius: 30px;
+   -webkit-border-radius: 30px;
+   -moz-border-radius: 30px;
+   -ms-border-radius: 30px;
+   -o-border-radius: 30px;
+   transition: 0.2s;
+   -webkit-transition: 0.2s;
+   -moz-transition: 0.2s;
+   -ms-transition: 0.2s;
+   -o-transition: 0.2s;
+}
+button:hover {
+    background-color: #e64030; /* Change the background color on hover */
+  }
+button:active {
+    background-color: #e64030;
+    box-shadow: 0 1px #666;
+    transform: translate(1px);
+    -webkit-transform: translate(1px);
+    -moz-transform: translate(1px);
+    -ms-transform: translate(1px);
+    -o-transform: translate(1px);
+}
+ul li{
+    list-style: none;
+    font-size: 17px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    padding: 12px 8px 12px 50px;
+    user-select: none;
+    position: relative;
+    cursor: pointer;
+}
+
+ul li::before{
+    content: '';
+    position: absolute;
+    height: 28px;
+    width: 28px;
+    border-radius: 50%;
+    background-image: url(uncheck.png);
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    background-size: cover;
+    background-position: center;
+    top: 5px;
+    left: 5px;
+}
+ul li.checked{
+    color: #555;
+    text-decoration: line-through;
+}
+ul li.checked::before{
+    background-image: url(oracheck.png);
+    height: 30px;
+    width: 30px;
+    background-position: center;
+    background-color: transparent;
+    background-size: cover;
+    top: 4px;
+    left: 4px;
+    list-style: none;
+    
+}
+ul li span{
+    position: absolute;
+    right: 0%;
+    top: 5px;
+    width: 40px;
+    height: 40px;
+    font-size: 22px;
+    color: #555;
+    line-height: 40px;
+    text-align: center;
+    border-radius: 50%;
+    -webkit-border-radius: 50;
+    -moz-border-radius: 50;
+    -ms-border-radius: 50;
+    -o-border-radius: 50;
+}
+ul li span:hover{
+    color: #edeef0;
+}
+.footer{
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: smaller;
+    display: block;
+    text-decoration: underline;
+}
